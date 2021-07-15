@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>{{ page.title }}</title>
+    <style>
+      h1
+      {text-align:center; 
+       color:blue;
+       background-color:yellow;
+       font-family:"楷体",“宋体”,“Times New Roman”;
+      }
+      h3
+      {text-align:center; 
+       background-color:rgba(10, 195, 241, 0.973);
+       font-family:"楷体",“宋体”,“Times New Roman”;
+      }
+      p
+      {padding-top:25px;
+       padding-bottom:25px;
+       padding-right:50px;
+       padding-left:50px;
+       border-style:solid dashed;
+       border-width:5px;
+       border-color:red blue;
+       margin-top:20px;
+       margin-bottom:20px;
+       margin-right:50px;
+       margin-left:50px;
+      }
+     </style>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body background="https://note.youdao.com/yws/api/personal/file/WEBf80072cda656afc8dcb5c6fc4582654e?method=download&shareKey=2a808c9e2ea3ab79c5481f6501d95f58">
+    {% include navigation.html %}
+    {{ content }}
+  </body>
+</html>
