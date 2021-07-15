@@ -21,7 +21,6 @@
 
     .button {
       background-color: #4CAF50;
-      /* 绿色 */
       border: none;
       color: white;
       padding: 20px;
@@ -103,28 +102,59 @@
       margin-right: 50px;
       margin-left: 50px;
     }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgb(243, 125, 125);
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: rgb(243, 13, 13);
+    }
+
+    .active {
+      background-color: #07f390;
+    }
   </style>
-  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
 <body>
-  <nav>
-  
-  <a href="/" >总介绍</a>
-  
-  <a href="/仙剑奇侠传一.html" >仙剑奇侠传一</a>
-  
-  <a href="/新仙剑奇侠传.html" >新仙剑奇侠传</a>
-  
-  <a href="/仙剑奇侠传二.html" >仙剑奇侠传二</a>
-  
-  <a href="/仙剑奇侠传三.html" >仙剑奇侠传三</a>
-  
-  <a href="/仙剑奇侠传四.html" >仙剑奇侠传四</a>
-  
-  <a href="/about.html" class="current" >About</a>
-  
-</nav>
+  <ul>
+    
+    <li><a href="/" >总介绍</a></li>
+    
+    <li><a href="/仙剑奇侠传一.html" >仙剑奇侠传一</a></li>
+    
+    <li><a href="/新仙剑奇侠传.html" >新仙剑奇侠传</a></li>
+    
+    <li><a href="/仙剑奇侠传二.html" >仙剑奇侠传二</a></li>
+    
+    <li><a href="/仙剑奇侠传三.html" >仙剑奇侠传三</a></li>
+    
+    <li><a href="/仙剑奇侠传四.html" >仙剑奇侠传四</a></li>
+    
+    <li><a href="/仙剑奇侠传五.html" >仙剑奇侠传五</a></li>
+    
+    <li><a href="/仙剑奇侠传六.html" >仙剑奇侠传六</a></li>
+    
+    <li><a href="/about.html"  class="active" >About</a></li>
+    
+  </ul>
   <h1>this page tells you a little bit about me.</h1>
 </body>
 

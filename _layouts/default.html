@@ -21,7 +21,6 @@
 
     .button {
       background-color: #4CAF50;
-      /* 绿色 */
       border: none;
       color: white;
       padding: 20px;
@@ -103,12 +102,43 @@
       margin-right: 50px;
       margin-left: 50px;
     }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgb(243, 125, 125);
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: rgb(243, 13, 13);
+    }
+
+    .active {
+      background-color: #07f390;
+    }
   </style>
-  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
 <body>
-  {% include navigation.html %}
+  <ul>
+    {% for item in site.data.navigation %}
+    <li><a href="{{ item.link }}" {% if page.url==item.link %} class="active" {% endif %}>{{ item.name }}</a></li>
+    {% endfor %}
+  </ul>
   {{ content }}
 </body>
 
